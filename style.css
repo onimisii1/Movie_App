@@ -1,0 +1,78 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+h1 {
+  font-weight: bold;
+  color: red;
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+header {
+  background: black;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  color: red;
+}
+#content {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+.movie-card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+.movie-card:hover {
+  transform: scale(1.05);
+}
+.movie-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.movie-card .details {
+  padding: 10px;
+}
+.search-bar {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.hidden {
+  display: none;
+}
+#error-message {
+  color: red;
+  text-align: center;
+}
+.loading {
+  text-align: center;
+  font-size: 24px;
+  margin: 20px 0;
+}
